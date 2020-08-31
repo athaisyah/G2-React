@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link href="./style.css" rel="stylesheet">
+  <script src="js/login.js" defer></script>
+  <title>PMS - Login</title>
+</head>
+
+<body class="bg-dark">
+
+  <div class="container">
+    <div class="card card-login mx-auto mt-5">
+      <div class="card-header">Parking Management System</div>
+      <div class="card-body">
+        <form>
+          <!-- Email -->
+          <div class="form-group">
+            <div class="form-label-group">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required"
+                autofocus="autofocus">
+              <label for="inputEmail"></label>
+            </div>
+          </div>
+          <!-- Password -->
+          <div class="form-group">
+            <div class="form-label-group">
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
+              <label for="inputPassword"></label>
+            </div>
+          </div>
+          <!-- Simpan Password -->
+          <div class="form-group">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me">
+                Simpan Password
+              </label>
+            </div>
+          </div>
+          <!-- Button -->
+          <a class="btn btn-primary btn-block" onclick="cekLogin()">Login</a>
+        </form>
+        <div class="text-center">
+          <a class="d-block small" href="#">Lupa Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
