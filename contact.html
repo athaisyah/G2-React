@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/0c1d2959f4.js" crossorigin="anonymous"></script>
+
+    <!-- google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
+
+    <!-- My style -->
+    <style>
+        body {
+            background: #1F2235;
+            font-family: "Baloo Tamma 2", cursive;
+            color: white;
+        }
+
+        /* NAVIGATION BAR */
+        #nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .navbar {
+            background-color: #1f2235;
+            padding: 0 !important;
+        }
+        .navbar-brand i {
+            height: 40px;
+            padding-left: 20px;
+        }
+        .navbar-nav li {
+            padding: 0 10px;
+        }
+        .navbar-nav li a {
+            color: white !important;
+            font-weight: 600;
+            float: right;
+            text-align: left;
+        }
+        .navigation-link {
+            border: 2px solid transparent;
+        }
+        .navigation-link:hover {
+            text-decoration: none;
+            border-bottom: 2px solid #f5ba09;
+            transition: 0.5s ease;
+        }
+        /* END NAVIGATION BAR */
+
+        hr {
+            background: #f5ba09;
+        }
+
+        .contact-form {
+            background: rgba(49, 53, 82, .9);
+            color: #f5ba09;
+            margin-top: 50px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 3px;
+        }
+    </style>
+
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <!-- ====================== NAVIGATION BAR ====================== -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><i class="fas fa-code fa-2x text-warning pb-3"></i>
+                <h5 class="text-white d-inline pl-2">Portfolio</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html #home" class="text-white navigation-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html #about" class="text-white navigation-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html #projects" class="text-white navigation-link">PROJECT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html" target="_blank"
+                            class="text-white navigation-link">RESUME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" target="_blank"
+                            class="text-white navigation-link">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- ====================== END NAVIGATION BAR ====================== -->
+
+
+    <!-- ============================== CONTACT FORM ============================== -->
+    <div class="container contact-form">
+        <h1 class="text-warning">Contact form</h1>
+        <hr>
+        <div class="row">
+
+            <!-- ============================== ADDRESS ============================== -->
+            <div class="col-md-6">
+                <h5>Location</h5>
+                <address class="text-white">16 Kedaung, Tangerang Selatan. ID</address>
+                <br>
+                <h5>Phone Call</h5>
+                <p class="text-white">+62-822-137-393-14</p>
+                <br>
+                <h5>Send an Email</h5>
+                <p class="text-white">athaisyah@yahoo.com</p>
+            </div>
+
+            <!-- ============================== SEND ============================== -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Massage</label>
+                    <textarea name="" id="" class="form-control" cols="" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="button"
+                        class="btn btn-outline-warning btn-lg mr-5 justify-content-center btn-block"><b
+                            class="text-white">Send</b></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ============================== END CONTACT FORM ============================== -->
+
+</body>
+
+</html>
