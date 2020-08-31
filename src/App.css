@@ -32,7 +32,22 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* RESUME PAGE CSS */
+.resume-right-col {
+  background: #0c1024;
+  color: white;
+  padding: 2em;
+
+}
+
+/* END RESUME PAGE CSS */
+
+.body {
+  background-color: #c5cae8,
 }
