@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import "react-mdl/extra/material.css";
+import "react-mdl/extra/material.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from "react-router-dom";
+
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import employeeReducers from "./reducers/employeeReducers";
+
+if (localStorage.getItem("employees") == null)
+  localStorage.setItem("employees", JSON.stringify([]));
+let initialState = {
+  currentIndex: -1,
+  list: JSON.parse(localStorage.getItem("employees")),
+};
+
+const store = createStore(employeeReducers, initialState);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
