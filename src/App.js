@@ -1,24 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import { Features, Login, Home } from "./components/main/_index";
+import {
+  CreateCustomer,
+  TableCustomer,
+  CreateProduct,
+  TableProduct,
+  CreateShipping,
+  TableShipping,
+  CreateStaff,
+  TableStaff,
+} from "./components/pages/_index";
+
+import NavigationBar from "./components/Navbar";
+
+// import Sidebar from "./components/Sidebar2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        {/* <NavigationBar /> */}
+        <Login />
+        {/* <NavigationBar /> */}
+        {/* <Home /> */}
+        {/* <Features /> */}
+        {/* <CreateCustomer /> */}
+        {/* <TableCustomer /> */}
+
+        {/* <CreateProduct /> */}
+        {/* <TableProduct /> */}
+
+        {/* <CreateShipping /> */}
+        {/* <TableShipping /> */}
+
+        {/* <CreateStaff /> */}
+        {/* <TableStaff /> */}
+      </Router>
     </div>
   );
 }
